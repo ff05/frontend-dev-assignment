@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IconsCancel = () => (
-  <svg class="icon icon-cancel" viewBox="0 0 16 16">
+  <svg class="IconsCancel" viewBox="0 0 16 16">
     <path
       d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 
       47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 

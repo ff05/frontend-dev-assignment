@@ -1,13 +1,15 @@
 import React, { PureComponent } from 'react';
+import './SearchBar.css';
 
 class SearchBar extends PureComponent {
   render() {
     return(
-    <div className="App">
-      <form>
-        <input placeholder="Zoeken" />
-      </form>
-    </div>
+      <div className="SearchBar">
+        <form className="form">
+          <input className="form__input" placeholder="Zoeken" />
+          {this.props.children}
+        </form>
+      </div>
     )
   }
 };
