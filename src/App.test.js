@@ -1,8 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import SearchBar from './components/SearchBar';
+import { shallow } from 'enzyme';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-});
+describe('<App />', () => {
+  const renderedComponent = shallow(<App />);
+
+  it('renders without crashing', () => {
+    renderedComponent;
+  });
+
+  it('should contains the Searchbar', () => {
+    expect(renderedComponent.find(SearchBar)).toBeTruthy();
+  })
+})
