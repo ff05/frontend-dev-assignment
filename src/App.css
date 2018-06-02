@@ -1,0 +1,11 @@
+:root {
+  --main-color: #757575; 
+}
+
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.App {
+  padding: 20px;
+}

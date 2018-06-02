@@ -1,0 +1,9 @@
+:root {
+  --main-color: #757575; 
+}
+
+.IconsSearch {
+  flex: 1;
+  height: 100%;
+  fill: var(--main-color);
+}
