@@ -19,7 +19,7 @@
   fill: var(--main-color);
 }
 
-.IconsSearch--highlight {
+.IconsSearch--highlight svg {
   fill: var(--dark-color);
   transition: .3s ease;
 }
