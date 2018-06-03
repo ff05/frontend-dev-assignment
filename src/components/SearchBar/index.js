@@ -5,7 +5,7 @@ import './SearchBar.css';
 
 class SearchBar extends PureComponent {
   state = {
-    cancelVisible: false,
+    isText: false,
     isFocus: false,
     textInput: "",
   }
@@ -22,8 +22,16 @@ class SearchBar extends PureComponent {
     });
   }
 
+  handleChange(event) {
+    const { value } = event.target;
+    this.setState({ 
+      textInput: value,
+      isText: value ? true : false,
+     });
+  }
+
   render() {
-    const { isFocus, cancelVisible } = this.state;
+    const { isFocus, isText, textInput } = this.state;
     return(
       <div className={isFocus ? "SearchBar SearchBar--highlight" : "SearchBar"}>
         <form className="form">
@@ -32,10 +40,12 @@ class SearchBar extends PureComponent {
             type="text"
             onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleFocus.bind(this)}
+            onChange={this.handleChange.bind(this)}
+            value={textInput}
             placeholder="Zoeken"
             aria-label="Zoeken"
           />
-          <IconsCancel isVisible={cancelVisible} onClick={this.handleClear.bind(this)} />
+          <IconsCancel isText={isText} onClick={this.handleClear.bind(this)} />
           <IconsSearch isFocus={isFocus} />
         </form>
       </div>
