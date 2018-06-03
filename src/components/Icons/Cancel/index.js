@@ -1,18 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import './Cancel.css';
 
-const IconsCancel = () => (
-  <svg class="IconsCancel" viewBox="0 0 16 16">
-    <path
-      d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 
-      47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 
-      0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 
-      0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 
-      4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 
-      192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 
-      74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 
-      0-165.3-74.2-165.3-165.4z"
-    />
+const IconsCancel = ({ isVisible }) => (
+  <svg className={isVisible ? "IconsCancel show" : "hide"} viewBox="0 0 31.112 31.112">
+    <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"/>
   </svg>
 );
+
+IconsCancel.propTypes = {
+  isVisible: PropTypes.bool,
+};
+
+IconsCancel.defaultProps = {
+  isVisible: false,
+}
 
 export default IconsCancel;

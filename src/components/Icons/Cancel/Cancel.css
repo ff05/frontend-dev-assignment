@@ -1,0 +1,19 @@
+:root {
+  --main-color: #757575; 
+}
+
+.IconsCancel {
+  flex: 2;
+  height: 90%;
+  fill: var(--main-color);
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
