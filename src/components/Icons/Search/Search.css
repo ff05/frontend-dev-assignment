@@ -5,7 +5,8 @@
 
 .IconsSearch {
   border: none;
-  flex: 1;
+  position: absolute;
+  right: 0;
   height: 100%;
 }
 

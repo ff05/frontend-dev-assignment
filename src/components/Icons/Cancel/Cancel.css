@@ -4,7 +4,8 @@
 
 .IconsCancel {
   border: none;
-  flex: 2;
+  position: absolute;
+  right: 30px;
   height: 100%;
 }
 
@@ -26,4 +27,5 @@
 .show {
   opacity: 1;
   visibility: visible;
+  transition: .3s ease;
 }
