@@ -2,6 +2,8 @@ import React from 'react';
 import SearchBar from './index';
 import IconsSearch from '../Icons/Search';
 import { shallow } from 'enzyme';
+import api from '../../api/client';
+import sinon from 'sinon';
 
 describe('<SearchBar />', () => {
   const renderedComponent = shallow(<SearchBar />);
@@ -24,5 +26,14 @@ describe('<SearchBar />', () => {
 
     const searchIcon = renderedComponent.find(IconsSearch);
     expect(searchIcon.props().isFocus).toEqual(true);
+  });
+
+  it('should render the results-list when search results are fetched', () => {
+    var stub = sinon.stub();
+
+    stub('hello');
+
+    console.log(stub.firstCall.args);
+
   });
 })
