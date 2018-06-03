@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import SearchBar from './components/SearchBar';
+import './App.css'
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <h2>Hello world</h2>
-        </div>
-        <p>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="App">
+      <SearchBar />
+    </div>
+  );
+};
 
 export default App;

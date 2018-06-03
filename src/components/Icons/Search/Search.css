@@ -1,0 +1,25 @@
+:root {
+  --main-color: #757575; 
+  --dark-color: #212121;
+}
+
+.IconsSearch {
+  border: none;
+  flex: 1;
+  height: 100%;
+}
+
+.IconsSearch:focus,
+.IconsSearch:active {
+  outline-width: 0;
+}
+
+.IconsSearch svg {
+  height: 100%;
+  fill: var(--main-color);
+}
+
+.IconsSearch--highlight svg {
+  fill: var(--dark-color);
+  transition: .3s ease;
+}
