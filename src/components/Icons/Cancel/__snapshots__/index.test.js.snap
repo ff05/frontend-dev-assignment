@@ -19,11 +19,16 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <path
-        d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"
-/>,
+      "children": <svg
+        onClick={undefined}
+        viewBox="0 0 31.112 31.112"
+>
+        <path
+                d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"
+        />
+</svg>,
       "className": "hide",
-      "viewBox": "0 0 31.112 31.112",
+      "value": "Clear",
     },
     "ref": null,
     "rendered": Object {
@@ -31,24 +36,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "d": "M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "path",
-    },
-    "type": "svg",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
         "children": <path
           d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"
 />,
-        "className": "hide",
+        "onClick": undefined,
         "viewBox": "0 0 31.112 31.112",
       },
       "ref": null,
@@ -64,6 +55,53 @@ ShallowWrapper {
         "type": "path",
       },
       "type": "svg",
+    },
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <svg
+          onClick={undefined}
+          viewBox="0 0 31.112 31.112"
+>
+          <path
+                    d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"
+          />
+</svg>,
+        "className": "hide",
+        "value": "Clear",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <path
+            d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"
+/>,
+          "onClick": undefined,
+          "viewBox": "0 0 31.112 31.112",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "d": "M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "path",
+        },
+        "type": "svg",
+      },
+      "type": "button",
     },
   ],
   Symbol(enzyme.__options__): Object {

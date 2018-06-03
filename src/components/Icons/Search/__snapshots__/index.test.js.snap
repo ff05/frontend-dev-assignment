@@ -27,6 +27,7 @@ ShallowWrapper {
         />
 </svg>,
       "className": "IconsSearch",
+      "onClick": undefined,
       "type": "submit",
       "value": "Submit",
     },
@@ -71,6 +72,7 @@ ShallowWrapper {
           />
 </svg>,
         "className": "IconsSearch",
+        "onClick": undefined,
         "type": "submit",
         "value": "Submit",
       },

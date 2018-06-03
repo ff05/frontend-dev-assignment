@@ -66,7 +66,6 @@ class SearchBar extends PureComponent {
 
   render() {
     const { isFocus, isText, textInput, searchTerms } = this.state;
-    console.log(textInput);
     return(
       <div className={isFocus ? "SearchBar SearchBar--highlight" : "SearchBar"}>
         <form className="form">
