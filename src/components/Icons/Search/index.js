@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Search.css'
 
-const IconsSearch = ({ isFocus }) => (
+const IconsSearch = ({ onClick, isFocus }) => (
   <button
     type="submit"
     className={isFocus ? "IconsSearch IconsSearch--highlight" : "IconsSearch"}
     value="Submit"
+    onClick={onClick}
   >
     <svg viewBox="0 0 451 451">
       <path

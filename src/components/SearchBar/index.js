@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import api from '../../api/client';
 import IconsSearch from '../Icons/Search';
 import IconsCancel from '../Icons/Cancel';
 import './SearchBar.css';
@@ -29,6 +30,11 @@ class SearchBar extends PureComponent {
       isText: value ? true : false,
      });
   }
+  
+  handleSearch(event) {
+    event.preventDefault();
+    api();
+  }
 
   render() {
     const { isFocus, isText, textInput } = this.state;
@@ -46,7 +52,7 @@ class SearchBar extends PureComponent {
             aria-label="Zoeken"
           />
           <IconsCancel isText={isText} onClick={this.handleClear.bind(this)} />
-          <IconsSearch isFocus={isFocus} />
+          <IconsSearch onClick={this.handleSearch.bind(this)} isFocus={isFocus} />
         </form>
       </div>
     )
