@@ -1,4 +1,4 @@
-## de Bijenkorf Frontend Dev assignment
+## Frontend Dev assignment
 
 ## Folder Structure
 
